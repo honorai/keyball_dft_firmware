@@ -29,12 +29,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                        KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_EQL   ,
     KC_LSFT   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                        KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_MINS  ,
     KC_LCTL  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                        KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_BSLS  ,
-              KC_LALT,KC_LGUI,KC_LCTL     ,LT(1,KC_SPC),LT(2,KC_DEL),                             KC_BSPC,LT(4,KC_ENT), _______  ,   _______  ,  TD_1
+              KC_LALT,KC_LGUI,KC_LCTL     ,LT(1,KC_SPC),LT(2,KC_DEL),                             KC_BSPC,LT(4,KC_ENT), _______  ,   _______  ,  TD(TD_LNG12)
   ),
 //num
   [1] = LAYOUT_universal(
     KC_ESC ,  KC_F1   , KC_F2    , KC_F3   , KC_F4    , KC_F5    ,                                         KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , _______   ,
-    KC_LSFT ,  KC_1    , KC_2     , KC_3    , KC_4     , KC_5     ,                                   KC_6  , TD_2  , KC_8    , KC_9  , KC_0  , _______   ,
+    KC_LSFT ,  KC_1    , KC_2     , KC_3    , KC_4     , KC_5     ,                                   KC_6  , TD(TD_7_SMINS)  , KC_8    , KC_9  , KC_0  , _______   ,
     KC_LCTL ,  _______ , KC_LEFT  , KC_DOWN , KC_RGHT  , KC_BSPC  ,                                         KC_PGDN  , KC_LEFT  , KC_DOWN  , KC_RGHT  , _______  , _______  ,
                   _______  , _______ , _______  ,         _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [4] = LAYOUT_universal(
     RGB_TOG  , AML_TO   , AML_I50  , AML_D50  , _______  , _______  ,                                        _______  , _______  , KC_UP    , KC_INS , KC_PSCR , _______  ,
     RGB_MOD  , _______  , _______  , CPI_I100  , CPI_I1K  , SCRL_DVI ,                                        _______  , KC_LEFT  , KC_DOWN  , KC_RGHT , _______  , _______  ,
-    RGB_RMOD , _______  , _______  , CPI_D100  , CPI_D1K  , SCRL_DVD ,                                        _______  , _______ , TD_3 , _______  , _______  , _______ ,
+    RGB_RMOD , _______  , _______  , CPI_D100  , CPI_D1K  , SCRL_DVD ,                                        _______  , _______ , TD(TD_CL_ALLCL) , _______  , _______  , _______ ,
                   QK_BOOT  , KBC_RST  , _______  ,        _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
 };
@@ -117,7 +117,5 @@ tap_dance_action_t tap_dance_actions[] = {
     [TD_CL_ALLCL] = ACTION_TAP_DANCE_DOUBLE(C(KC_W),A(KC_F4)),
 };
 
-#define TD_1 TD(TD_LNG12)
-#define TD_2 TD(TD_7_SMINS)
-#define TD_3 TD(TD_CL_ALLCL)
+
 
