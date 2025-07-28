@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                        KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_DEL   ,
     KC_TAB   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                        KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , S(KC_7)  ,
     KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                        KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_INT1  ,
-              KC_LALT,KC_LGUI,LCTL_T(KC_LNG2)     ,LT(1,KC_SPC),LT(3,KC_LNG1),                  KC_BSPC,LT(2,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , KC_PSCR
+              KC_LALT,KC_LGUI,KC_LCTL     ,LT(1,KC_SPC),LT(2,KC_DEL),                  KC_BSPC,LT(4,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , KC_PSCR
   ),
 //num
   [1] = LAYOUT_universal(
@@ -92,8 +92,8 @@ LCTLT1_MO4,
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_jkl[] = {KC_J, KC_K, KC_L, COMBO_END};
-const uint16_t PROGMEM my_lt1lt2[] = {LT(1), LT(2), COMBO_END};
-const uint16_t PROGMEM my_ctrllt1[] = {KC_LCTL, LT(1), COMBO_END};
+const uint16_t PROGMEM my_lt1lt2[] = {LT(1,KC_SPC), LT(2,KC_DEL), COMBO_END};
+const uint16_t PROGMEM my_ctrllt1[] = {KC_LCTL, LT(1,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
 [JK_LCLICK] = COMBO(my_jk, MS_BTN1),
