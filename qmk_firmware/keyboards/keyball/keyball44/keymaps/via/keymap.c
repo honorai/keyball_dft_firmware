@@ -19,6 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 #include "quantum.h"
+#include "keymap.h"
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -103,13 +104,6 @@ combo_t key_combos[] = {
 [LCTLT1_MO4] = COMBO(my_ctrllt1, MO(4)),
 };
 #endif
-
-
-enum {
-  TD_LNG12,
-  TD_7_SMINS,
-  TD_CL_ALLCL,
-};
 
 tap_dance_action_t tap_dance_actions[] = {
     [TD_LNG12] = ACTION_TAP_DANCE_DOUBLE(KC_LNG2, KC_LNG1),
