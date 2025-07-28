@@ -96,9 +96,9 @@ const uint16_t PROGMEM my_lt1lt2[] = {LT(1,KC_SPC), LT(2,KC_DEL), COMBO_END};
 const uint16_t PROGMEM my_ctrllt1[] = {KC_LCTL, LT(1,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
-[JK_LCLICK] = COMBO(my_jk, MS_BTN1),
-[KL_RCLICK] = COMBO(my_kl, MS_BTN1),
-[JKL_DRUG] = COMBO(my_jkl, MS_BTN3),
+[JK_LCLICK] = COMBO(my_jk, KC_BTN1),
+[KL_RCLICK] = COMBO(my_kl, KC_BTN2),
+[JKL_DRUG] = COMBO(my_jkl, KC_BTN3),
 [LT1LT2_MO3] = COMBO(my_lt1lt2, MO(3)),
 [LCTLT1_MO4] = COMBO(my_ctrllt1, MO(4)),
 };
