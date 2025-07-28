@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //mouse
   [4] = LAYOUT_universal(
     RGB_TOG  , AML_TO   , AML_I50  , AML_D50  , _______  , _______  ,                                        _______  , _______  , KC_UP    , KC_INS , KC_PSCR , _______  ,
-    RGB_MOD  , _______  , _______  , CPI_T100  , CPI_T1K  , SCRL_DVI ,                                        _______  , KC_LEFT  , KC_DOWN  , KC_RGHT , _______  , _______  ,
+    RGB_MOD  , _______  , _______  , CPI_I100  , CPI_I1K  , SCRL_DVI ,                                        _______  , KC_LEFT  , KC_DOWN  , KC_RGHT , _______  , _______  ,
     RGB_RMOD , _______  , _______  , CPI_D100  , CPI_D1K  , SCRL_DVD ,                                        _______  , _______ , TD(TD_CLOSE_ALLCLOSE) , _______  , _______  , _______ ,
                   QK_BOOT  , KBC_RST  , _______  ,        _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
