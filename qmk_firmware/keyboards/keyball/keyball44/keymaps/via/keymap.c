@@ -112,7 +112,7 @@ enum {
   TD_CLOSE_ALLCLOSE,
 };
 
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
     [TD_LANGSWITCH] = ACTION_TAP_DANCE_DOUBLE(LANG2, LANG1),
     [TD_7_UNDERSCORE] = ACTION_TAP_DANCE_DOUBLE(KC_7, S(KC_MINS)),
     [TD_CLOSE_ALLCLOSE] = ACTION_TAP_DANCE_DOUBLE(C(KC_W),A(KC_F4)),
