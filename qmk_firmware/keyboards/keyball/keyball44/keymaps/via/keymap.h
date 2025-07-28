@@ -1,4 +1,4 @@
-
+#pragma once
 #include "quantum.h"  // QMKの基本定義を含む
 
 // Tap Danceのインデックス（TD()マクロで使用）
