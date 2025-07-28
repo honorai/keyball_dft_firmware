@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //num
   [1] = LAYOUT_universal(
     KC_ESC ,  KC_F1   , KC_F2    , KC_F3   , KC_F4    , KC_F5    ,                                         KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , _______   ,
-    KC_LSFT ,  KC_1    , KC_2     , KC_3    , KC_4     , KC_5     ,                                   KC_6  , TD(D_7_UNDERSCORE)  , KC_8    , KC_9  , KC_0  , _______   ,
+    KC_LSFT ,  KC_1    , KC_2     , KC_3    , KC_4     , KC_5     ,                                   KC_6  , TD(TD_7_UNDERSCORE)  , KC_8    , KC_9  , KC_0  , _______   ,
     KC_LCTL ,  _______ , KC_LEFT  , KC_DOWN , KC_RGHT  , KC_BSPC  ,                                         KC_PGDN  , KC_LEFT  , KC_DOWN  , KC_RGHT  , _______  , _______  ,
                   _______  , _______ , _______  ,         _______  , _______  ,                   _______  , _______  , _______       , _______  , _______
   ),
@@ -113,7 +113,7 @@ enum {
 };
 
 tap_dance_action_t tap_dance_actions[] = {
-    [TD_LANGSWITCH] = ACTION_TAP_DANCE_DOUBLE(LANG2, LANG1),
+    [TD_LANGSWITCH] = ACTION_TAP_DANCE_DOUBLE(KC_LANG2, KC_LANG1),
     [TD_7_UNDERSCORE] = ACTION_TAP_DANCE_DOUBLE(KC_7, S(KC_MINS)),
     [TD_CLOSE_ALLCLOSE] = ACTION_TAP_DANCE_DOUBLE(C(KC_W),A(KC_F4)),
 };
